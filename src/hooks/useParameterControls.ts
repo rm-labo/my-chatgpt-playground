@@ -42,7 +42,7 @@ const reducer = (state: ChatCompletionOptionType, action: Action): ChatCompletio
     case 'setUser':
       return { ...state, user: action.user }
     default:
-      throw new Error(`Unhandled action type: ${action.type}`)
+      throw new Error(`Unhandled action type: ${(action as Action).type}`)
   }
 }
 

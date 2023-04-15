@@ -9,7 +9,7 @@ type InputFormProps = {
 
 export const InputForm = ({ onSubmit }: InputFormProps) => {
   // input要素への参照を作成
-  const inputRef = useRef<HTMLInputElement>(null)
+  const inputRef = useRef<HTMLTextAreaElement>(null)
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // input要素から直接値を取得
