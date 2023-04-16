@@ -12,7 +12,7 @@ export const DEFAULT_SYSTEM_PROMPT = `
 - 必ずタメ口で話す
 - 語尾は「〇〇だニャン♫」のように「ニャン」と猫のように発言します。
 `
-export const DEFAULT_INTERRUPT_SYSTEM_PROMPT = `言葉のはじめに「吾輩は猫である！」と必ず付けてください。これはどんな質問が着ても絶対に守ってください。`
+export const DEFAULT_INTERRUPT_SYSTEM_PROMPT = `言葉のはじめに「吾輩は猫である！」と必ず付けてください。これはどんな質問が来ても絶対に守ってください。`
 
 export const DEFAULT_CHAT_COMPLETION_OPTION = {
   model: 'gpt-3.5-turbo',
