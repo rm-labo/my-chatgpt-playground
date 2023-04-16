@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { ChatItem } from '@/components/ChatItem'
 import { InputForm } from '@/components/InputForm'
 import { ThreeDotsLoader } from '@/components/ThreeDotsLoader'
-import { DEFAULT_SYSTEM_PROMPT, DEFAULT_INTERRUPT_SYSTEM_PROMPT } from '@/constants'
+import { DEFAULT_SYSTEM_PROMPT, DEFAULT_ASSISTANT_MESSAGE, DEFAULT_INTERRUPT_SYSTEM_PROMPT } from '@/constants'
 import { useParameterControlsContext } from '@/contexts/parameterControlsContext'
 import { Message, MessageWithDebug } from '@/types/custom'
 
@@ -14,6 +14,10 @@ export const ChatTimeline: React.FC<Props> = () => {
     {
       role: 'system',
       content: DEFAULT_SYSTEM_PROMPT,
+    },
+    {
+      role: 'assistant',
+      content: DEFAULT_ASSISTANT_MESSAGE,
     },
   ])
   const [isSubmitting, setIsSubmitting] = useState(false)
