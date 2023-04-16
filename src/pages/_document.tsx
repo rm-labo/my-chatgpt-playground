@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <meta charSet="utf-8" />
         <meta name="description" content={''} />
-        <meta name="robots" content="noindex, nofollow">
+        <meta name="robots" content="noindex, nofollow" />
       </Head>
       <body className=" bg-white">
         <Main />
